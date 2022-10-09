@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com País</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    Qual a sua nacionalidade? <input type="text" name="pais" id="pais">
+    <input type="button" value="Confirmar" onclick="confirmar()">
+    <div id="res">
+    </div>
+    <script>
+        function confirmar() {
+            var txpais = window.document.querySelector('input#pais')
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Vivendo em ${txpais.value}</p>`
+            if (txpais.value == 'Brasil') {
+                res.innerHTML += 'Você é Brasileiro!'
+            } else {
+                res.innerHTML += 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>

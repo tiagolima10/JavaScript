@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> + <!-- Input para caixa de número -->
+    <input type="number" name="txtn2" id="txtn2">   <!-- Input para caixa de número -->
+    <input type="button" value="Somar" onclick="somar()"> <!-- Input para botão de ativação --> <!-- Quando clicar acontece a função de somar -->
+    <div id="res">Resultado</div> <!-- Div para resultado -->
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1') //Caixa n1
+            var tn2 = window.document.querySelector('input#txtn2') //Somente a caixa n2
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value) //Variável pro valor da caixa de texto n1, pq vem um texto. Transformar em número
+            var n2 = Number(tn2.value) //Variável pro valor da caixa de texto n2, pq vem um texto. Transformar em número
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é: <strong>${s}</strong>` //Inserir textos em HTML
+        }
+    </script>
+</body>
+</html>

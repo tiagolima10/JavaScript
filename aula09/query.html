@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando o Query</title>
+</head>
+<body>
+    <h1>Query</h1>
+    <p>Teste 1</p>
+    <div>
+        <p>Teste 2</p>
+    </div>
+    <h2>Query 2</h2>
+
+    <script>
+        var teste = document.querySelector('h2')
+        teste.style.color = 'gold'
+        teste.style.backgroundColor = 'black'
+        var teste2 = document.querySelector('div>p')
+        document.write('Olá, ' + teste2.innerText)
+        teste2.style.backgroundColor = 'gold'
+    </script>
+</body>
+</html>

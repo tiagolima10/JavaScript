@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20px Arial;
+        }
+
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!!</h1>
+    <p>Já me livrei da Maldição</p>
+    <script>
+        // (Number) Converte uma Var em um número que o usuário digitar
+        // (Number.parseFloat) Converte uma var em Float
+        // (Number.parseInt) Converte uma var em Inteiro
+        // (String) Converte uma var em String
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) //String //Transforma um dado em número inteiro
+        var n2 = Number.parseInt(window.prompt('Digite outro número: ')) // String //Transforma um dado em número real
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual à ${s} `) //Concatenação
+        // (number + number) para adição
+        //(string + string) para concatenação
+    </script>
+</body>
+</html>

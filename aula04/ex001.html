@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(200, 200, 255);
+            color: rgb(0, 0, 0);
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!!</h1>
+    <script>
+        /*
+        window.alert('Minha Primeira Mensagem') //Alerta, somente ok
+        window.confirm('Está gostando de JS?') //Janela com ok e cancelar
+        window.prompt('Qual é seu nome?') //Aparece uma caixa para escrever
+        */
+       /*var mes = window.prompt('Qual o próximo mês?')
+       window.alert(`Que o seu mês de ${mes} seja abençoado grandemente!`)
+       */
+      var num1 = Number.parseInt(window.prompt('Digite um número Inteiro'))
+      var num2 = Number.parseFloat(window.prompt('Digite um número real(decimal)'))
+      var num3 = Number(window.prompt('Digite outro número qualquer'))
+      var media = (num1 + num2 + num3)/3
+      var mult = (num1 * num2 * num3) 
+      var pot1 = num1 * num1
+      var pot2 = num2 * num2
+      var pot3 = num3 * num3
+      window.alert(`A média entre os números é: ${media}`)
+      window.alert(`A multiplicação entre os números é: ${mult}`)
+      window.alert(`A potênciação de cada um deles é, respectivamente: ${pot1}, ${pot2}, ${pot3}`)
+
+    </script>
+</body>
+</html>
